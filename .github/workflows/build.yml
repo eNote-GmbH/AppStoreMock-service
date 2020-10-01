@@ -11,5 +11,5 @@ jobs:
         with:
           # use Java 8
           java-version: adopt@1.8
-      - name: Compile
+      - name: build jar
         run: sbt assembly
