@@ -22,8 +22,9 @@ object BillerCache {
   private val inProject = new File(".").getCanonicalPath.endsWith(ProjectName)
 
   private val Folder = {
+  	val path = new File(".").getCanonicalPath
     val base = if(inProject) "" else "iap-service/"
-    new File(s"${base}tmp/")
+    new File(s"${path}tmp/")
   }
   if(!Folder.exists) {
     Folder.mkdirs
