@@ -12,4 +12,4 @@ jobs:
           # use Java 8
           java-version: adopt@1.8
       - name: Compile
-        run: sbt compile
+        run: sbt assembly

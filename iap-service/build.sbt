@@ -6,6 +6,8 @@ libraryDependencies ++= Seq(
   "net.databinder" %% "unfiltered-directives" % "0.7.1",
   "net.databinder" %% "unfiltered-jetty" % "0.7.1"
 )
+mainClass in (assembly) := Some("com.meetup.iap.IAPServer")
+assemblyJarName in assembly := "appStoreMock.jar"
 
 description := "Mock Apple IAP Server"
 
